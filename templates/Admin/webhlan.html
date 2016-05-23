@@ -1,0 +1,50 @@
+{% include "Admin/header.html" %}
+<body class="gray-bg">
+<link href="/static/css/plugins/footable/footable.core.css" rel="stylesheet">
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                    <div class="ibox-title">
+                        <h5>WebHlan</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row m-b-sm m-t-sm">
+                            <div class="col-md-11">
+                                <div class="input-group">
+                                    <input id='Args' type="text" placeholder="执行的模块命令" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary" onclick="GetArgs()"> 执行</button> </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="hlan" class="project-list">
+
+               
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% include "hplus-js.html" %}
+    <script src="/static/js/plugins/footable/footable.all.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        console.log('ok')
+    });
+    function GetArgs(){
+    	var args=$("#Args").val();
+    	var url="/Admin/Hlan/"+args;
+    	$.get(url,{a:"0"},
+    	        function(data,status){  
+    	            $("#hlan").html(data);
+    	            $(".footable").footable()
+    	            }   
+    	        );
+    };
+    </script>
+    </body>
+
+</html>
