@@ -1,0 +1,19 @@
+ip:
+- ip addr show
+getip:
+- "/sbin/ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6|awk '{print $2}'|tr -d \"addr:\""
+mem:
+- free -m
+disk:
+- df -Th
+hostname:
+- hostname
+cd-tmp:
+- cd /tmp && pwd
+- pwd
+iptables:
+- service iptables status
+port:
+- "netstat  -anptl| grep : | awk '{print $4}' |awk -F: '$2<10000{print $2}'|sort -u"
+hack:
+- "grep Failed /var/log/secure  | awk '{print $9\" \"$11}' | grep -v inva|grep -v 121.42 | uniq -d -c"

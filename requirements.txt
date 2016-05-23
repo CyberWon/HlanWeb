@@ -1,3 +1,4 @@
 Flask==0.10.1
 PyYAML==3.11
 paramiko==1.16.0
+redis==2.10.5
