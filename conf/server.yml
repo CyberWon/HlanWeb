@@ -1,0 +1,12 @@
+webserver:
+  192.168.60.5:
+    - root 
+    - XXXXX
+my:
+  123.123.123.123:
+  - root
+  - XXXXXXXXXx
+  - 22
+  22.22.22.22:
+  - root
+  - OneDay1995

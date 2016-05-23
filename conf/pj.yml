@@ -1,0 +1,125 @@
+rno:
+   name: 雷诺项目
+   redis: 
+    dns: red.renault.eraclouds.com
+    ip: 
+    - 121.199.72.86
+    path: /opt/redis
+   ftp: 
+    dns: ftp.renault.eraclouds.com
+    ip: 
+    - 121.199.22.212
+    path: /opt/htdocs/rno
+   app:
+    dns: app.renault.eraclouds.com
+    ip:
+    - 121.199.72.86 
+    - 121.199.22.212
+    path: /opt/htdocs/app.renault.eraclouds.com
+   db:
+    type: rds
+    dns: db.renault.eraclouds.com
+    user: test
+    pass: 123456
+   project:
+    ip: 
+    - 121.199.72.86 
+    - 121.199.22.212
+    path: /opt/htdocs/apache-tomcat-rno 
+   admin:
+    dns: admin.renault.eraclouds.com
+    user: admin
+    pass: 123456
+   api:
+    dns: api.renault.eraclouds.com
+xsb:
+  name: 销售宝
+  app:
+   dns: http://dl.dongfeng-nissan.com.cn/rs3/
+   ip:
+   - 172.28.211.46
+  api:
+   dns: api.dfn.eraclouds.com
+   ip:
+   - 120.26.213.74
+   - 120.26.52.169
+   - 112.124.39.168
+   - 121.43.102.236
+   - 121.41.82.199
+   - 121.41.14.149
+   path: /opt/apache-tomcat-dfrc
+  db:
+   type: rds
+   dns: rdsjrivfujirfrf.mysql.rds.aliyuncs.com
+   user: root_dfn
+   pass: aq6b4pguq0
+  redis:
+   dns: session.dfn.eraclouds.com
+   ip: 10.160.44.207
+   path: /opt/redis
+vw:
+  api:
+   dns: http://vw.o2o.eraclouds.com/BlueO2OApi/
+   ip:
+   - 121.40.96.47
+   path: /opt/apache-tomcat-7.0.52-o2o/
+  admin:
+   dns: http://vw.o2o.eraclouds.com/VwBlueO2OBackEnd
+   ip:
+   - 121.40.96.47
+   path: /opt/apache-tomcat-7.0.52-o2o/
+   user: admin
+   pass: 123456
+   dns: http://vw.o2o.eraclouds.com/VwBlueO2OBackEnd/
+  redis:
+   dns: redis.o2o.eraclouds.com
+   ip: 127.0.0.1
+   path: /opt/redis/
+jkb:
+  name: 驾控宝
+  admin:
+   dns: www.jiakongbao.cn
+   ip: 121.40.120.30
+   path: /opt/jkb
+  db:
+   type: postgresql
+   ip: 121.40.120.30
+   dns: pgsql.jiakongbao.cn
+   path: /opt/pgsql
+keliuji:
+  api:
+   ip: 114.215.208.254
+   dns: api.wifigure.eraclouds.com
+   path: aa
+  admin:
+   ip: 114.215.208.254
+   dns: 114.215.208.254
+   path: /opt/apache-tomcat-wifi/
+  db:
+   type: mysql
+   ip: 127.0.0.1
+   path: /opt/mysql
+o2o:
+  name: 大众
+  api:
+   path: /opt/apache-tomcat-7.0.52-o2o_xsbapi
+   dns: 
+   - apiapp.vwdirect.com
+   - api.o2o.eraclouds.com
+   ip: 
+   - 121.40.96.47
+  admin:
+   path: /opt/apache-tomcat-7.0.52-o2o
+   dns: 
+   - cp.vwdirect.com 
+   - admin.vwblueo2o.eraclouds.com
+   ip:
+   - 182.92.112.111
+  redis:
+   path: /opt/redis
+   ip: 
+   - 121.40.96.47
+  db:
+   type: mysql
+   path: /opt/mysql
+   ip: 121.40.96.47

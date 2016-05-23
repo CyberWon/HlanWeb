@@ -1,0 +1,14 @@
+<pre>
+139.129.22.186:
+             total       used       free     shared    buffers     cached
+Mem:           992        902         90         50         68        241
+-/+ buffers/cache:        591        401
+Swap:            0          0          0
+
+119.29.184.223:
+             total       used       free     shared    buffers     cached
+Mem:          1006        440        566          0        150        187
+-/+ buffers/cache:        101        904
+Swap:         2047          0       2047
+
+</pre>

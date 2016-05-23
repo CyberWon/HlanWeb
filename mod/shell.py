@@ -3,7 +3,6 @@
 from ext.conf import readServer,readModule
 from ext.mod_ns import run_cmd
 import threading
-mod_json={"active":"shell"}
 def mod_help():
     pass
 def execCmd(ip,v,g,rs=True):
@@ -28,6 +27,7 @@ def execCmd(ip,v,g,rs=True):
 
 def mod_main(argvs):
     global mod_json
+    mod_json={}
     server_list=readServer(argvs[1])
     g=argvs[5]
     T_thread=[]

@@ -1,0 +1,14 @@
+<pre>
+139.129.22.186:
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/xvda1     ext4       20G  7.7G   11G  42% /
+devtmpfs       devtmpfs  489M     0  489M   0% /dev
+tmpfs          tmpfs     497M     0  497M   0% /dev/shm
+tmpfs          tmpfs     497M   51M  447M  11% /run
+tmpfs          tmpfs     497M     0  497M   0% /sys/fs/cgroup
+
+119.29.184.223:
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/vda1      ext3   20G  3.0G   16G  16% /
+
+</pre>

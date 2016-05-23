@@ -9,6 +9,6 @@ def extHlanMain(sp=''):
             li.insert(0,'hlan.py')
             li.insert(2,'-m')
             li.insert(4,'-a')
-            func(li)
+            return func(li)
         return __extHlanMain
     return _extHlanMain

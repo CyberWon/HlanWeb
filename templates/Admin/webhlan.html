@@ -12,8 +12,8 @@
                         <div class="row m-b-sm m-t-sm">
                             <div class="col-md-11">
                                 <div class="input-group">
-                                    <input id='Args' type="text" placeholder="执行的模块命令" class="input-sm form-control"> <span class="input-group-btn">
-                                        <button type="button" class="btn btn-sm btn-primary" onclick="GetArgs()"> 执行</button> </span>
+                                    <input id='Args' onkeydown='if(event.keyCode==13){btnArgs.click()}' type="text" placeholder="执行的模块命令" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" id='btnArgs' class="btn btn-sm btn-primary" onclick="GetArgs()"> 执行</button> </span>
                                 </div>
                             </div>
                         </div>

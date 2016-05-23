@@ -27,7 +27,7 @@ class run_cmd():
             s.close()
         except Exception as e:
             res_dict['status']='error'
-            res_dict['value']={'error':e.message}
+            res_dict['value']={'error':e}
         finally:
             return res_dict
 class upload_sftp():
